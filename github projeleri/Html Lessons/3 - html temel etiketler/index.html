@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Etiket Eğitimi" content="Kodluyoruz">
+    <title>Etiketler</title>
+</head>
+    <body> <!-- temel etiketler: h, p, br, a, ul, ol, li, hr, strong, b, script, button, img, -->
+    <!--1. H H etiketleri başlık etiketleridir. Büyükten küçüğe sırasıyla-->
+            <h1>HTML EĞİTİMİ</h1>
+            <h2>temel etiketler</h2>
+
+    <!--p sayfa içerisinde oluşturacağımız metinler <p> etiketi ile oluştururuz-->
+            <p>HTML etiketlerini nasıl kullanıldığını öğreniyorum</p>
+    
+    <!-- br atlatma etiketidir-->
+            <p> bunu yaparkende <br> dikkatli olunmalıdır</p>
+
+    <!-- <a> etiketinin en önemli özelliği href özelliğidir. Bu etiket ile sayfaları linkleyebiliriz. Etiket içerisine yazılan içerik sayfa üzerinde gösterilecek içeriktir. href içine yazılan ise tıklandığında gideceği URL'dir.-->
+            <a href="https://www.kodluyoruz.org">Kodluyoruz</a>
+    
+    <!-- <ul>="unordered list (sırasız liste)"
+         <ol>="ordered list (sıralı liste)"
+        bu iki etiketden biriyle liste oluşturduktan sonra <li> ile içeriğini oluşruyoruz-->
+            <P>Frontend</P>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <P>BACKEND</P>
+            <ol>
+                <li>java</li>
+                <li>react</li>
+                <li>node</li>
+            </ol>
+
+    <!-- <hr> konu bitimi yeni paragraf başlangıcı-->
+    <p>
+        HTML yani Hiper Metin İşaretleme Dili, web sayfalarında gördüğümüz iskelet yapısını oluşturmak için kullanılan metin işaretleme dilidir.
+      </p>
+  
+      <hr>
+  
+      <p>
+        CSS, HTML elementlerinin çeşitli medya araçlarında nasıl ekrana
+        yansıtılacağını tanımlayan bir dildir. Tek seferde birden çok sayfa için kurallar belirtebilir.
+    
+    <!-- <strong> etiketi bir metinin arama motorlarına önemli olduğunu bildirmek için kullanılır. Kullanıldığı zaman metini kalın yapar. Eğer sadece metini kalınlaştırmak isterseniz <b> etiketini kullanabilirsiniz. -->
+
+    <h2><strong> Kodluyoruz </strong></h2>
+    <p><b> HTML </b> Etiketleri </p>
+
+    <!--<script> etiketi JavaScript kodlarını HTML içerisine yazabilmemizi sağlar.-->
+            <script>
+                document.write("Kodluyoruz")
+            </script>
+    
+    <!-- <button> etiketini buton oluşturmak için kullanırız. Buton üzerine yazmak istediğiniz içeriği etiketin içine yazmanız yeterlidir.-->
+        <button> HTML LESSONS </button>
+
+    <!--Resim eklemek için<img> etiketini kullanıyoruz. <img src=”resim.jpg” alt=”açıklama yazısı” /> src="" kısmına eklemek istediğimiz görselin yolunu yani kaynağını yazmalıyız. Eğer görselimiz ve HTML dosyamız aynı klasörde ise görselin adını ve uzantısını yazmamız yeterlidir. alt="" kısmına görselin açıklamasını yazıyoruz fakat isterseniz boş bırakabilirsiniz. Bu etiket kapanmaya ihtiyaç duymaz-->
+            <img src=”görseller/kodluyoruz.jpg” alt=”Kodluyoruz Bootcamp” />
+
+    <!-- İFRAME Belge içinde belge gösterebilmemizi sağlayan etikettir. Genelde başka bir sitedeki belgeyi kendi sayfamızda göstermek için kullanırız. örn: Youtube'dan bir videoyu sayfamızda göstermek istersek <iframe> kodlarını sayfamıza eklememiz yeterli.(video üzerinde sağ tıklayıp yerleştirme kodunu kopyala diyerek iframe kodunu kopyalayabiliriz.)-->
+        <iframe width="924" height="520" src="https://www.youtube.com/embed/VUDP2-lPA5o?list=PLGrTHqyRDvx7aP99nDNRKDi70bLFr_kX-" title="HTML I En Çok Kullanılan HTML Etiketleri Nelerdir? #2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </body>
+</html>

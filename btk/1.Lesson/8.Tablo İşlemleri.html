@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo İşlemleri</title>
+    <link rel="stylesheet" href="img/favicon.ico" type="x-icon">
+</head>
+    <body>
+        <!-- Tablolar body bölümünde <table> tagı içine yazılır. satır sütun kesişimi hücredir. <tr> satır <td> sütun oluşturur. -->
+        <h1>3x3 lük tablo örneği</h1>
+        <table border="2"> <!-- border tablo için kenarlık oluşturur-->
+            <tr><td>AD</td><td>SOYAD</td><td>DOĞUMYERİ</td></tr>
+            <tr><td>ERDİNÇ</td><td>ÖZDEMİR</td><td>SAKARYA</td></tr>
+            <tr><td>HAVA</td><td>ÖZDEMİR</td><td>ANKARA</td></tr>
+        </table>
+        <br>
+        <!-- tablo biçimlendirme kodları
+            caption    : tablonun başlığı
+            thead      : tablonun ilk satırı, Başlığı
+            th         : bu etiket  içine yazılanlar kalın olarak gösterilir.Başlık İçin
+            tbody      : tablonun gövdesi
+            tfoot      : tablo son satırı
+            bu kodlar sayesinde tablonun başlangıcı gövdesi ve son satırına css satırı oluşturmamızı sağlar.-->
+            <table border="1">
+                <caption>Ülke Nüfusları</caption>
+            <thead>
+                <tr><th>Ülke</th><th>Nüfus</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Türkiye</td><td>82M</td></tr>
+                <tr><td>Yunanistan</td><td>12M</td></tr>
+                <tr><td>Bulgaristan</td><td>8M</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td>Toplam Nüfus:</td><td>102M</td></tr>
+            </tfoot>
+        </table> 
+        <br>
+        <!-- Tablolarda Hücre Birleştirme için kullanılan kodlar:
+            colspan : satırlardaki hücreleri birleştirir.
+            rowspan : sütunlardaki hücreleri birleştirir.
+        -->
+        <table border="1">
+            <caption>Ülke Nüfusları</caption>
+            <thead>
+                <tr><th>Ülke</th><th>Nüfus</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Türkiye</td><td>82M</td></tr>
+                <tr><td>Yunanistan</td><td>12M</td></tr>
+                <tr><td>Bulgaristan</td><td>8M</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="2">Toplam Nüfus:</td><td>102M</td></tr>
+                <!-- colspan yazılıp toplam nüfus ve 102 m arası etiketler silinirse tablo şekli bozulur. ara etiket silinip colspan yazılırsa 2 sütun tabloya uygun olarak birleştirir. -->
+
+            </tfoot>
+        </table> 
+        <br>
+        <table border="1">
+            <caption>Ülke Nüfusları</caption>
+            <thead>
+                <tr><th>Ülke</th><th>Nüfus</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Türkiye</td><td>82M</td></tr>
+                <tr><td>Yunanistan</td><td>12M</td></tr>
+                <tr><td>Bulgaristan</td><td>8M</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="2">Toplam Nüfus:102M</td></tr>
+            </tfoot>    
+        </table> 
+        <br>
+        <!-- rows span ile de sütun satır birleştirme yapılır. -->
+        <table border="1">
+            <tr>
+                <th>Name:</th>
+                <td>Erdinç ÖZDEMİR</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Telephone:</th>
+                <td>0123452345</td>
+            </tr>
+            <tr>
+                <td>76144875618</td>
+            </tr>
+        </table>
+    </body>
+</html>

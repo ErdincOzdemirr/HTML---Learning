@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <!-- head bölümü inceleme -->
+    <head>
+        <meta charset="UTF-8"> 
+        <!-- tr karakter desteği sağlar -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta http-equiv="refresh" content="30"> bu kodla sayfa 30 sn de bir sayfa yenilenir -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> bu kod ile kullanıcının kullandığı masaüstü tablet ve telefon ekranına göre oto sayfa genişliği ayarlanır.   
+            meta name keyword content arama motoruna keyword gönderir
+             meta name description content sayfa tanımlaması
+             meta name author content siteyi oluşturan kişinin adı tanımlanır 
+        -->
+        <title>Semantik Web Tasarımı</title> 
+        <!-- sayfa başlığı sekme ve seo için -->
+        <!-- style css yapısı içindir -->
+        <!-- link rel href ile css bağlantısını html sayfamıza bağlar -->
+    </head>
+    <body>
+        <h1>Semantik Web Tasarımı; Genek Sayfa Düzeni</h1>
+        <p>
+            SEMANTİK HTML komutlarının kullanılması durumunda Arama motorunda en uygun içeriğin bulunmasını sağlar ve daha üst sıralarda listelenir. 
+            form (form bilgileri burada bulunur)
+            table (tablolar burada oluşturulur)
+            article section nav aside header footer
+            bunlar semantiktir.
+            span ve div semantik değildir.
+        </p>
+        <p>
+            header (başlık bu etiketle yazılır )
+            nav (üst menü yapımına yarar)
+            section (birden fazla sayfanın benzer içerikli articlelar burada bulunur )
+            article (makale bölümüdür)
+            aside (sayfa yan sütun yapımı için kullanılır)
+            <!-- article ve aside bölümlerin kutu içine alınımı renklendirilmesi konumu css ile yapılmaktadır -->
+            footer (alt menü yapımı için kullanılır. eğer footer içine menü yapılacaksa nav tagıyla yapılır. )
+            figure (fotoğraf şekil burada bulunur) ve <figcaption> ile resme açıklama eklememizi sağlar.
+       </p>
+
+        <div id="container"> 
+            <!-- div ile genel tablo yapısı oluşturulup içine semantik yapılar oulşturulur. -->
+            <header>
+                <!-- Başlık bilgisi buraya yazılır -->
+                örnek semantik web tasarımı
+            </header>
+            <nav>
+                <!-- ana menü gelecek -->
+                Kodlama sayfamıza ulaşmak için tıklayınız.
+            </nav>
+            <section>
+                <!-- belirli konudaki article lar bir arada tutulur section içinde. hx ile başlayıp article ile hx aşağı iner -->
+                <article>
+                    <!-- buraya içerik gelecek --> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati accusamus sapiente culpa iusto iure, voluptates numquam tempore vitae nesciunt labore.
+                </article>
+                <article>
+                    <!-- buraya içerik gelecek --> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta accusantium tenetur totam reprehenderit perferendis ab impedit qui cumque. Et, obcaecati.
+                </article>
+                <article>
+                    <!-- buraya içerik gelecek -->Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta accusantium tenetur totam reprehenderit perferendis ab impedit qui cumque. Et, obcaecati.
+                </article>
+            </section>
+            <aside>
+                <!-- buraya yan menü gelecek -->
+                yapay zeka kullanımı hakkında bilgiler için tıklayınız
+            </aside>
+            <footer>
+                <!-- alt menü bilgileri buraya yazılır ex: telif bilgileri -->
+                Bu site tamamen ERDİNÇ ÖZDEMİR tarafından oluşturulmuştur.
+            </footer>
+        </div>
+    </body>
+</html>
